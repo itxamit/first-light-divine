@@ -34,9 +34,9 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-slate-800">
+    <section id="contact" className="py-24 bg-gradient-to-b from-slate-900 to-slate-800">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-amber-100 mb-4">
             Get In Touch
           </h2>
@@ -46,7 +46,7 @@ export default function Contact() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          <div>
+          <div className="animate-slide-up">
             <h3 className="text-2xl font-serif font-semibold text-amber-100 mb-6">
               Let's Create Something Amazing Together
             </h3>
@@ -56,57 +56,57 @@ export default function Contact() {
             </p>
 
             <div className="space-y-6">
-              <div className="flex items-start space-x-4">
-                <div className="bg-gradient-to-br from-amber-400/20 to-amber-600/20 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="group flex items-start space-x-4 p-4 rounded-lg bg-amber-400/5 border border-amber-200/10 hover:border-amber-400/30 hover:bg-amber-400/10 transition-all">
+                <div className="bg-gradient-to-br from-amber-400/20 to-amber-600/20 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:from-amber-400/30 group-hover:to-amber-600/30 transition-all">
                   <Mail className="text-amber-400" size={24} />
                 </div>
                 <div>
                   <h4 className="text-amber-100 font-semibold mb-1">Email</h4>
-                  <p className="text-slate-400">info@firstlightdivine.com</p>
+                  <p className="text-slate-400 group-hover:text-slate-300 transition-colors">info@firstlightdivine.com</p>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="bg-gradient-to-br from-amber-400/20 to-amber-600/20 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="group flex items-start space-x-4 p-4 rounded-lg bg-amber-400/5 border border-amber-200/10 hover:border-amber-400/30 hover:bg-amber-400/10 transition-all">
+                <div className="bg-gradient-to-br from-amber-400/20 to-amber-600/20 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:from-amber-400/30 group-hover:to-amber-600/30 transition-all">
                   <Phone className="text-amber-400" size={24} />
                 </div>
                 <div>
                   <h4 className="text-amber-100 font-semibold mb-1">Phone</h4>
-                  <p className="text-slate-400">+1 (555) 123-4567</p>
+                  <p className="text-slate-400 group-hover:text-slate-300 transition-colors">+1 (555) 123-4567</p>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="bg-gradient-to-br from-amber-400/20 to-amber-600/20 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="group flex items-start space-x-4 p-4 rounded-lg bg-amber-400/5 border border-amber-200/10 hover:border-amber-400/30 hover:bg-amber-400/10 transition-all">
+                <div className="bg-gradient-to-br from-amber-400/20 to-amber-600/20 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:from-amber-400/30 group-hover:to-amber-600/30 transition-all">
                   <MapPin className="text-amber-400" size={24} />
                 </div>
                 <div>
                   <h4 className="text-amber-100 font-semibold mb-1">Location</h4>
-                  <p className="text-slate-400">Serving clients worldwide</p>
+                  <p className="text-slate-400 group-hover:text-slate-300 transition-colors">Serving clients worldwide</p>
                 </div>
               </div>
             </div>
 
-            <div className="mt-12 bg-slate-900 border border-amber-200/10 rounded-xl p-6">
+            <div className="mt-12 bg-gradient-to-br from-amber-400/10 to-amber-600/10 border border-amber-200/20 rounded-xl p-6 backdrop-blur-md">
               <h4 className="text-amber-100 font-semibold mb-3">Business Hours</h4>
               <div className="space-y-2 text-slate-400">
-                <div className="flex justify-between">
+                <div className="flex justify-between hover:text-slate-300 transition-colors">
                   <span>Monday - Friday</span>
-                  <span>9:00 AM - 6:00 PM</span>
+                  <span className="text-amber-400">9:00 AM - 6:00 PM</span>
                 </div>
-                <div className="flex justify-between">
+                <div className="flex justify-between hover:text-slate-300 transition-colors">
                   <span>Saturday</span>
-                  <span>10:00 AM - 4:00 PM</span>
+                  <span className="text-amber-400">10:00 AM - 4:00 PM</span>
                 </div>
-                <div className="flex justify-between">
+                <div className="flex justify-between hover:text-slate-300 transition-colors">
                   <span>Sunday</span>
-                  <span>Closed</span>
+                  <span className="text-amber-300">Closed</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="bg-slate-900 border border-amber-200/10 rounded-2xl p-8">
+          <div className="bg-slate-900/60 backdrop-blur-md border border-amber-200/10 rounded-2xl p-8 hover:border-amber-400/30 transition-all shadow-lg shadow-amber-400/10 animate-slide-up">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-amber-100 mb-2 font-medium">
@@ -119,7 +119,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full bg-slate-800 border border-amber-200/20 rounded-lg px-4 py-3 text-amber-100 focus:outline-none focus:border-amber-400 transition-colors"
+                  className="w-full bg-slate-800/50 border border-amber-200/20 rounded-lg px-4 py-3 text-amber-100 focus:outline-none focus:border-amber-400 focus:bg-slate-800 focus:shadow-lg focus:shadow-amber-400/10 transition-all backdrop-blur-sm"
                   placeholder="John Doe"
                 />
               </div>
@@ -135,7 +135,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full bg-slate-800 border border-amber-200/20 rounded-lg px-4 py-3 text-amber-100 focus:outline-none focus:border-amber-400 transition-colors"
+                  className="w-full bg-slate-800/50 border border-amber-200/20 rounded-lg px-4 py-3 text-amber-100 focus:outline-none focus:border-amber-400 focus:bg-slate-800 focus:shadow-lg focus:shadow-amber-400/10 transition-all backdrop-blur-sm"
                   placeholder="john@example.com"
                 />
               </div>
@@ -150,7 +150,7 @@ export default function Contact() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full bg-slate-800 border border-amber-200/20 rounded-lg px-4 py-3 text-amber-100 focus:outline-none focus:border-amber-400 transition-colors"
+                  className="w-full bg-slate-800/50 border border-amber-200/20 rounded-lg px-4 py-3 text-amber-100 focus:outline-none focus:border-amber-400 focus:bg-slate-800 focus:shadow-lg focus:shadow-amber-400/10 transition-all backdrop-blur-sm"
                   placeholder="+1 (555) 123-4567"
                 />
               </div>
@@ -165,7 +165,7 @@ export default function Contact() {
                   value={formData.service}
                   onChange={handleChange}
                   required
-                  className="w-full bg-slate-800 border border-amber-200/20 rounded-lg px-4 py-3 text-amber-100 focus:outline-none focus:border-amber-400 transition-colors"
+                  className="w-full bg-slate-800/50 border border-amber-200/20 rounded-lg px-4 py-3 text-amber-100 focus:outline-none focus:border-amber-400 focus:bg-slate-800 focus:shadow-lg focus:shadow-amber-400/10 transition-all backdrop-blur-sm"
                 >
                   <option value="">Select a service</option>
                   <option value="seo">SEO Optimization</option>
@@ -189,13 +189,13 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   rows={4}
-                  className="w-full bg-slate-800 border border-amber-200/20 rounded-lg px-4 py-3 text-amber-100 focus:outline-none focus:border-amber-400 transition-colors resize-none"
+                  className="w-full bg-slate-800/50 border border-amber-200/20 rounded-lg px-4 py-3 text-amber-100 focus:outline-none focus:border-amber-400 focus:bg-slate-800 focus:shadow-lg focus:shadow-amber-400/10 transition-all resize-none backdrop-blur-sm"
                   placeholder="Tell us about your project..."
                 ></textarea>
               </div>
 
               {submitStatus === 'success' && (
-                <div className="bg-green-400/10 border border-green-400/30 rounded-lg p-4 text-green-400">
+                <div className="bg-green-400/10 border border-green-400/30 rounded-lg p-4 text-green-400 animate-fade-in">
                   Thank you! We'll get back to you soon.
                 </div>
               )}
@@ -203,7 +203,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-amber-400 to-amber-600 text-slate-900 px-8 py-4 rounded-lg font-semibold text-lg hover:from-amber-500 hover:to-amber-700 transition-all transform hover:scale-105 flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-gradient-to-r from-amber-400 to-amber-600 text-slate-900 px-8 py-4 rounded-lg font-semibold text-lg hover:from-amber-500 hover:to-amber-700 shadow-lg shadow-amber-500/50 hover:shadow-amber-500/70 transition-all transform hover:scale-105 flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
                 <Send size={20} />
