@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
               <img
-                src="/WhatsApp Image 2025-11-26 at 20.12.16_7172aeac.jpg"
+                src="/logo.png"
                 alt="First Light Divine"
                 className="h-12 w-12 object-contain hover:scale-110 transition-transform"
               />
