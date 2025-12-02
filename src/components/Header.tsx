@@ -18,7 +18,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img
-              src="/WhatsApp Image 2025-11-26 at 20.12.16_7172aeac.jpg"
+              src="/logo.png"
               alt="First Light Divine"
               className="h-12 w-12 object-contain"
             />
