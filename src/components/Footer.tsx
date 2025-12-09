@@ -44,22 +44,39 @@ export default function Footer() {
           <div>
             <h3 className="text-amber-100 font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Connect With Us</h3>
             <div className="flex gap-2 sm:gap-3">
-              <a href="#" className="group bg-slate-800/60 hover:bg-amber-400/20 border border-amber-200/10 hover:border-amber-400/30 w-8 sm:w-10 h-8 sm:h-10 rounded-lg flex items-center justify-center transition-all backdrop-blur-sm hover:shadow-lg hover:shadow-amber-400/20">
+
+              {/* Facebook */}
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-slate-800/60 hover:bg-amber-400/20 border border-amber-200/10 hover:border-amber-400/30 w-8 sm:w-10 h-8 sm:h-10 rounded-lg flex items-center justify-center transition-all backdrop-blur-sm hover:shadow-lg hover:shadow-amber-400/20"
+              >
                 <Facebook className="text-amber-400 group-hover:scale-110 transition-transform" size={16} />
               </a>
-              <a href="#" className="group bg-slate-800/60 hover:bg-amber-400/20 border border-amber-200/10 hover:border-amber-400/30 w-8 sm:w-10 h-8 sm:h-10 rounded-lg flex items-center justify-center transition-all backdrop-blur-sm hover:shadow-lg hover:shadow-amber-400/20">
-                <Twitter className="text-amber-400 group-hover:scale-110 transition-transform" size={16} />
-              </a>
-              <a href="#" className="group bg-slate-800/60 hover:bg-amber-400/20 border border-amber-200/10 hover:border-amber-400/30 w-8 sm:w-10 h-8 sm:h-10 rounded-lg flex items-center justify-center transition-all backdrop-blur-sm hover:shadow-lg hover:shadow-amber-400/20">
+
+              {/* Instagram — UPDATED */}
+              <a
+                href="https://www.instagram.com/firstlightdivinemarketing?igsh=MWx1eXYwam1jZ3QzdA=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-slate-800/60 hover:bg-amber-400/20 border border-amber-200/10 hover:border-amber-400/30 w-8 sm:w-10 h-8 sm:h-10 rounded-lg flex items-center justify-center transition-all backdrop-blur-sm hover:shadow-lg hover:shadow-amber-400/20"
+              >
                 <Instagram className="text-amber-400 group-hover:scale-110 transition-transform" size={16} />
               </a>
-              <a href="#" className="group bg-slate-800/60 hover:bg-amber-400/20 border border-amber-200/10 hover:border-amber-400/30 w-8 sm:w-10 h-8 sm:h-10 rounded-lg flex items-center justify-center transition-all backdrop-blur-sm hover:shadow-lg hover:shadow-amber-400/20">
+
+              {/* LinkedIn */}
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-slate-800/60 hover:bg-amber-400/20 border border-amber-200/10 hover:border-amber-400/30 w-8 sm:w-10 h-8 sm:h-10 rounded-lg flex items-center justify-center transition-all backdrop-blur-sm hover:shadow-lg hover:shadow-amber-400/20"
+              >
                 <Linkedin className="text-amber-400 group-hover:scale-110 transition-transform" size={16} />
               </a>
-              <a href="#" className="group bg-slate-800/60 hover:bg-amber-400/20 border border-amber-200/10 hover:border-amber-400/30 w-8 sm:w-10 h-8 sm:h-10 rounded-lg flex items-center justify-center transition-all backdrop-blur-sm hover:shadow-lg hover:shadow-amber-400/20">
-                <Youtube className="text-amber-400 group-hover:scale-110 transition-transform" size={16} />
-              </a>
+
             </div>
+
           </div>
         </div>
 
