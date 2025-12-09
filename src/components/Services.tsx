@@ -1,4 +1,5 @@
-import { Search, Megaphone, LineChart, Mail, Users, PenTool, ArrowRight } from 'lucide-react';
+import { Search, Megaphone, LineChart, Mail, Users, PenTool, ArrowRight, X } from 'lucide-react';
+import { useState } from 'react';
 
 const services = [
   {
@@ -46,6 +47,75 @@ const services = [
 ];
 
 export default function Services() {
+  const [selected, setSelected] = useState<string | null>(null);
+
+  const details: Record<string, { heading: string; paragraphs: string[]; bullets?: string[] }> = {
+    'SEO Optimization': {
+      heading: 'SEO (Search Engine Optimization)',
+      paragraphs: [
+        'SEO helps your website appear higher on Google when people search for your products or services. It improves your website’s structure, content, and overall performance so search engines clearly understand your business and show it to the right customers. And to help you achieve this, we focus on improving every part of your website that affects ranking — from your content and keywords to your speed, mobile experience, and technical health — so you see real, measurable growth.',
+        'At our agency, we work on On-Page SEO and Technical SEO, which includes optimizing titles, headings, keywords, URLs, images, page speed, mobile responsiveness, and fixing any issues that stop your pages from ranking. We also enhance your content quality, internal linking, indexing, and overall user experience to make your website easy for both customers and Google to navigate.',
+        'We help you get actual results by first understanding your business goals, analyzing your website and competitors, and identifying what your audience is searching for. Then we create a customized SEO strategy tailored to your brand. Our team consistently updates, improves, and monitors your website to ensure steady growth in search visibility, traffic, and leads. Our aim is simple: to make your website a strong, high-ranking asset that brings long-term success for your business.'
+      ],
+      bullets: ['Keyword Research', 'On-Page SEO', 'Technical SEO', 'Link Building']
+    },
+    'Email Marketing': {
+      heading: 'Email Marketing',
+      paragraphs: [
+        'Email Marketing allows your business to connect directly with your audience through personalized messages, promotions, and updates, helping you drive engagement, sales, and customer loyalty.',
+        'Instead of sending generic emails, we make sure every message reaches the right person at the right time, encouraging meaningful interactions and measurable results.',
+        'We cover all aspects of email marketing, including campaign design, automation, audience segmentation, performance tracking, and optimization. Our team creates visually appealing emails with clear, compelling content that matches your brand’s voice.',
+        'By segmenting your audience based on interests, behavior, and previous interactions, we ensure your campaigns are highly relevant and effective. Automation tools are used to schedule messages, follow-ups, and drip campaigns that nurture leads without you having to manage every step manually.',
+        'Performance metrics like open rates, click-through rates, and conversions are closely monitored so we can refine each campaign for better results.',
+        'Rather than just sending emails, we focus on building a strategy that works for your business. First, we analyze your audience, goals, and past campaigns to design a plan that maximizes impact. Then we handle everything from creating the content and visuals to scheduling, testing subject lines, and reviewing results—turning your email campaigns into a reliable growth engine for your business.'
+      ],
+      bullets: ['Campaign Design', 'Automation', 'Segmentation', 'Performance Tracking']
+    },
+    'Social Media Marketing': {
+      heading: 'Social Media Management',
+      paragraphs: [
+        'Social Media Management ensures your brand stays visible, consistent, and engaging across platforms like Instagram, Facebook, LinkedIn, and more.',
+        'Our services include social media marketing, content strategy, community management, paid advertisements, and analytics reporting.',
+        'We create content calendars, design visuals that attract attention, write captions that encourage engagement, and manage interactions to build loyalty.',
+        'Paid campaigns are crafted to reach the right audience and boost visibility, while analytics track performance to refine strategies for consistent growth.',
+        'We act as your digital partner—studying your brand, audience, and competitors—then tailoring a plan to increase engagement, grow followers, and generate leads with measurable results.'
+      ],
+      bullets: ['Content Strategy', 'Community Management', 'Paid Advertising', 'Analytics & Reporting']
+    },
+    'PPC Advertising': {
+      heading: 'PPC Advertising',
+      paragraphs: [
+        'PPC Advertising is a fast and effective way to get your business noticed by the right people online. Platforms like Google and Facebook let you show ads to users actively searching for products or services like yours, paying only when someone clicks.',
+        'We offer end-to-end PPC management across Google Ads and Facebook Ads, including campaign creation, audience targeting, A/B testing, optimization, and performance monitoring.',
+        'Every campaign is carefully planned with ad copy and visuals designed to grab attention. We continuously track clicks, conversions, and other metrics to ensure your budget delivers the best possible results.',
+        'Our approach is hands-on and results-focused: we analyze your audience, study competitors, and design campaigns aligned with your goals—managing ad creation, bids, testing, and reporting to maximize ROI.'
+      ],
+      bullets: ['Google Ads', 'Facebook Ads', 'Campaign Optimization', 'A/B Testing']
+    },
+    'Content Marketing': {
+      heading: 'Content Marketing',
+      paragraphs: [
+        'Content Marketing creates and shares valuable content that attracts, educates, and engages your audience while building trust in your brand.',
+        'Services include blog writing, video content, infographics, social content, and content calendar planning.',
+        'We craft informative blog posts optimized for search, produce attention-grabbing videos, and design infographics that simplify complex topics.',
+        'With a structured content calendar, your content stays consistent, relevant, and timed to maximize reach and engagement.',
+        'We focus on strategy and results by understanding your audience, goals, and industry trends—then creating content tailored to your brand voice and objectives. Performance is analyzed and strategies adjusted to support lead generation, brand awareness, and long-term growth.'
+      ],
+      bullets: ['Blog Writing', 'Video Content', 'Infographics', 'Content Calendar']
+    },
+    'Brand Strategy': {
+      heading: 'Brand Strategy',
+      paragraphs: [
+        'A strong brand is more than just a logo or a catchy tagline—it’s the way your business is perceived, remembered, and trusted by your audience. Brand Strategy defines your unique position in the market, shapes your messaging, and ensures every interaction with your audience reflects who you are.',
+        'Through brand positioning, voice and messaging, visual identity, and market research, we build a framework that makes your brand stand out.',
+        'This includes crafting a tone and style that speaks to your customers, designing a cohesive visual identity with logos, colors, and design elements, and analyzing the market to identify opportunities and insights that strengthen your presence.',
+        'Every decision—from your messaging to your visuals—is guided by a clear understanding of your audience and your business goals. By aligning all touchpoints under one strategic vision, your brand becomes recognizable, memorable, and consistent across every platform.',
+        'The outcome is a brand that resonates deeply with your audience, builds trust, and drives meaningful engagement, giving you a strong foundation for growth and long-term success.'
+      ],
+      bullets: ['Brand Positioning', 'Voice & Messaging', 'Visual Identity', 'Market Research']
+    }
+  };
+
   return (
     <section id="services" className="py-16 sm:py-20 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900">
       <div className="container mx-auto px-4 sm:px-6">
@@ -99,7 +169,7 @@ export default function Services() {
                     ))}
                   </ul>
 
-                  <button className="w-full flex items-center justify-center space-x-1 sm:space-x-2 bg-gradient-to-r from-amber-400/10 to-amber-600/10 border border-amber-400/20 text-amber-300 py-2 rounded-lg font-medium text-xs sm:text-sm hover:from-amber-400/20 hover:to-amber-600/20 hover:border-amber-400/40 transition-all group/btn active:scale-95">
+                  <button onClick={() => setSelected(service.title)} className="w-full flex items-center justify-center space-x-1 sm:space-x-2 bg-gradient-to-r from-amber-400/10 to-amber-600/10 border border-amber-400/20 text-amber-300 py-2 rounded-lg font-medium text-xs sm:text-sm hover:from-amber-400/20 hover:to-amber-600/20 hover:border-amber-400/40 transition-all group/btn active:scale-95">
                     <span>Learn More</span>
                     <ArrowRight size={16} className="group-hover/btn:translate-x-1 transition-transform hidden sm:block" />
                   </button>
@@ -108,6 +178,52 @@ export default function Services() {
             );
           })}
         </div>
+
+        {selected && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center">
+            <div className="absolute inset-0 bg-slate-900/80 backdrop-blur-sm" onClick={() => setSelected(null)}></div>
+            <div className="relative max-w-2xl w-[92%] sm:w-[85%] md:w-[70%] bg-slate-900 border border-amber-200/20 rounded-2xl shadow-2xl shadow-amber-400/20 overflow-hidden animate-fade-in">
+              <div className="flex items-center justify-between p-4 sm:p-6 border-b border-amber-200/10 bg-gradient-to-r from-amber-400/10 to-amber-600/10">
+                <h4 className="text-amber-100 font-semibold text-base sm:text-lg">
+                  {details[selected]?.heading || selected}
+                </h4>
+                <button aria-label="Close" className="text-amber-300 hover:text-amber-200 transition-colors" onClick={() => setSelected(null)}>
+                  <X size={20} />
+                </button>
+              </div>
+              <div className="p-4 sm:p-6 space-y-3 sm:space-y-4">
+                {(details[selected]?.bullets?.length || 0) > 0 && (
+                  <div className="flex flex-wrap gap-2 mb-2">
+                    {details[selected]?.bullets?.map((b, i) => (
+                      <span key={i} className="inline-flex items-center px-2 py-1 rounded-full text-xs sm:text-sm border border-amber-200/20 text-amber-200 bg-amber-400/5">
+                        {b}
+                      </span>
+                    ))}
+                  </div>
+                )}
+                {details[selected]?.paragraphs?.map((p, i) => (
+                  <p key={i} className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    {p}
+                  </p>
+                )) || (
+                  <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    A comprehensive overview of this service is coming soon. Get in touch to discuss how we tailor this offering to your goals.
+                  </p>
+                )}
+
+                <div className="mt-2 sm:mt-4 flex items-center justify-between">
+                  <button onClick={() => setSelected(null)} className="text-slate-300 hover:text-amber-200 text-sm sm:text-base transition-colors">
+                    Close
+                  </button>
+                  <a href="#contact" className="inline-flex items-center space-x-2 bg-gradient-to-r from-amber-400 to-amber-600 text-slate-900 px-3 sm:px-4 py-2 rounded-full font-semibold text-xs sm:text-sm hover:from-amber-500 hover:to-amber-700 transition-all">
+                    <span>Contact Us</span>
+                    <ArrowRight size={16} />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
