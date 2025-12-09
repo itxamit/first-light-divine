@@ -52,14 +52,12 @@ export default function Hero() {
             <span className="text-amber-100 font-medium">Premium Digital Marketing Solutions</span>
           </div>
 
-<h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-serif font-bold text-white mb-4 sm:mb-6 leading-tight animate-fade-in-delayed">
-  Your brand deserves real growth —
-  <span className="block">we build strategies that truly deliver.</span>
-  <span className="block bg-gradient-to-r from-amber-300 via-amber-400 to-amber-600 bg-clip-text text-transparent drop-shadow-lg">
-    Digital Presence
-  </span>
-</h1>
-
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-serif font-bold text-white mb-4 sm:mb-6 leading-tight animate-fade-in-delayed">
+            Grow your brand with strategies
+            <span className="block bg-gradient-to-r from-amber-300 via-amber-400 to-amber-600 bg-clip-text text-transparent drop-shadow-lg">
+              Digital Presence
+            </span>
+          </h1>
 
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-200 mb-8 sm:mb-12 leading-relaxed max-w-2xl mx-auto px-2 sm:px-0 animate-fade-in-delayed-2">
             Transform your business with strategic digital marketing that drives growth,
