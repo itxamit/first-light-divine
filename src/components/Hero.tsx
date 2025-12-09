@@ -53,7 +53,7 @@ export default function Hero() {
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-serif font-bold text-white mb-4 sm:mb-6 leading-tight animate-fade-in-delayed">
-            Illuminate Your Brand's
+we create strategies that deliver
             <span className="block bg-gradient-to-r from-amber-300 via-amber-400 to-amber-600 bg-clip-text text-transparent drop-shadow-lg">
               Digital Presence
             </span>
