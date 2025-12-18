@@ -209,17 +209,7 @@ export default function Services() {
                   <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                     A comprehensive overview of this service is coming soon. Get in touch to discuss how we tailor this offering to your goals.
                   </p>
-                )}
-
-                <div className="mt-2 sm:mt-4 flex items-center justify-between">
-                  <button onClick={() => setSelected(null)} className="text-slate-300 hover:text-amber-200 text-sm sm:text-base transition-colors">
-                    Close
-                  </button>
-                  <a href="#contact" className="inline-flex items-center space-x-2 bg-gradient-to-r from-amber-400 to-amber-600 text-slate-900 px-3 sm:px-4 py-2 rounded-full font-semibold text-xs sm:text-sm hover:from-amber-500 hover:to-amber-700 transition-all">
-                    <span>Contact Us</span>
-                    <ArrowRight size={16} />
-                  </a>
-                </div>
+                )}               
               </div>
             </div>
           </div>
