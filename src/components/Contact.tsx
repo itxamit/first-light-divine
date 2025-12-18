@@ -62,7 +62,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-amber-100 font-semibold mb-0.5 sm:mb-1 text-sm sm:text-base">Email</h4>
-                  <p className="text-slate-400 group-hover:text-slate-300 transition-colors text-xs sm:text-sm">info@firstlightdivine.com</p>
+                  <p className="text-slate-400 group-hover:text-slate-300 transition-colors text-xs sm:text-sm">firstlightdivinemarketing@gmail.com</p>
                 </div>
               </div>
 
@@ -72,7 +72,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-amber-100 font-semibold mb-0.5 sm:mb-1 text-sm sm:text-base">Phone</h4>
-                  <p className="text-slate-400 group-hover:text-slate-300 transition-colors text-xs sm:text-sm">+1 (555) 123-4567</p>
+                  <p className="text-slate-400 group-hover:text-slate-300 transition-colors text-xs sm:text-sm">+91 79734 95711</p>
                 </div>
               </div>
 
@@ -151,7 +151,7 @@ export default function Contact() {
                   value={formData.phone}
                   onChange={handleChange}
                   className="w-full bg-slate-800/50 border border-amber-200/20 rounded-lg px-3 sm:px-4 py-2 sm:py-3 text-amber-100 text-sm sm:text-base focus:outline-none focus:border-amber-400 focus:bg-slate-800 focus:shadow-lg focus:shadow-amber-400/10 transition-all backdrop-blur-sm"
-                  placeholder="+1 (555) 123-4567"
+                  placeholder="+91 79734 95711"
                 />
               </div>
 
