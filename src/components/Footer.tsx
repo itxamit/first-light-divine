@@ -47,7 +47,7 @@ export default function Footer() {
 
               {/* Facebook */}
               <a
-                href="#"
+                href="https://www.facebook.com/share/1DGk35nzCj/?mibextid=wwXIfr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group bg-slate-800/60 hover:bg-amber-400/20 border border-amber-200/10 hover:border-amber-400/30 w-8 sm:w-10 h-8 sm:h-10 rounded-lg flex items-center justify-center transition-all backdrop-blur-sm hover:shadow-lg hover:shadow-amber-400/20"
@@ -67,7 +67,7 @@ export default function Footer() {
 
               {/* LinkedIn */}
               <a
-                href="#"
+                href="https://www.linkedin.com/in/firstlightdivinemarketing478a87399?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group bg-slate-800/60 hover:bg-amber-400/20 border border-amber-200/10 hover:border-amber-400/30 w-8 sm:w-10 h-8 sm:h-10 rounded-lg flex items-center justify-center transition-all backdrop-blur-sm hover:shadow-lg hover:shadow-amber-400/20"
