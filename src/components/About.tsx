@@ -52,7 +52,7 @@ export default function About() {
 
             <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 md:gap-8 bg-gradient-to-r from-amber-400/10 to-amber-600/10 border border-amber-200/20 rounded-2xl p-4 sm:p-6 md:p-8 backdrop-blur-md">
               <div className="text-center">
-                <div className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-amber-300 to-amber-500 bg-clip-text text-transparent mb-1">150+</div>
+                <div className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-amber-300 to-amber-500 bg-clip-text text-transparent mb-1">35+</div>
                 <div className="text-xs sm:text-sm text-slate-400">Clients Served</div>
               </div>
               <div className="hidden sm:block w-px h-12 md:h-16 bg-gradient-to-b from-amber-400/0 via-amber-400/50 to-amber-400/0"></div>
@@ -62,7 +62,7 @@ export default function About() {
               </div>
               <div className="hidden sm:block w-px h-12 md:h-16 bg-gradient-to-b from-amber-400/0 via-amber-400/50 to-amber-400/0"></div>
               <div className="text-center">
-                <div className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-amber-300 to-amber-500 bg-clip-text text-transparent mb-1">5+</div>
+                <div className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-amber-300 to-amber-500 bg-clip-text text-transparent mb-1">1.5+</div>
                 <div className="text-xs sm:text-sm text-slate-400">Years Experience</div>
               </div>
             </div>

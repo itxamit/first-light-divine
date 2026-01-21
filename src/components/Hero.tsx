@@ -54,7 +54,7 @@ export default function Hero() {
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-serif font-bold text-white mb-4 sm:mb-6 leading-tight animate-fade-in-delayed">
             Grow your brand with strategies
-            <span className="block bg-gradient-to-r from-amber-300 via-amber-400 to-amber-600 bg-clip-text text-transparent drop-shadow-lg">
+            <span className="block bg-gradient-to-r from-amber-300 via-amber-400 to-amber-600 bg-clip-text text-transparent drop-shadow-lg pb-2">
               Digital Presence
             </span>
           </h1>
@@ -82,12 +82,6 @@ export default function Hero() {
               Explore Services
             </button>
           </div>
-        </div>
-      </div>
-
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-amber-400 rounded-full flex items-start justify-center p-2">
-          <div className="w-1 h-3 bg-amber-400 rounded-full"></div>
         </div>
       </div>
     </section>
